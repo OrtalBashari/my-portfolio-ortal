@@ -1,0 +1,598 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+/* Header */
+header.welcome {
+    background: linear-gradient(to right, #92c8cf8c, #ffffff); /* gradient בהיר */
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #333; /* טקסט כהה כדי שיבלוט על רקע בהיר */
+    position: relative;
+    border-radius: 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 20px 20px;
+}
+
+header .header-content {
+    position: relative;
+    z-index: 1;
+}
+
+header h1 {
+    font-size: 60px;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-size: 24px;
+    margin: 10px 0 20px 0;
+}
+
+header .btn {
+    padding: 15px 40px;
+    background-color: #884545;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+header .btn:hover {
+    background-color: #a05555;
+}
+
+header h1 {
+    font-size: 60px;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+header p {
+    font-size: 24px;
+    margin: 10px 0 20px 0;
+}
+
+header .btn {
+    padding: 15px 40px;
+    background-color: #2d59b77d;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+header .btn:hover {
+    background-color: #dfc0c0;
+}
+
+/* Sections */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ed2424;
+}
+
+/* Projects */
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.project-card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    width: 250px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.project-card img {
+    width: 100%;
+    display: block;
+}
+
+.project-card h3 {
+    margin: 10px 0;
+}
+
+.project-card p {
+    padding: 0 10px 10px 10px;
+}
+
+.project-card .btn {
+    margin-bottom: 15px;
+}
+
+
+
+
+
+/* Contact Form */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea {
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    resize: vertical;
+}
+
+button {
+    padding: 15px;
+    border: none;
+    border-radius: 50px;
+    background-color: #3b98da;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #a05555;
+}
+
+/* Footer */
+footer {
+    background-color: #f9f9f9; /* צבע רקע בהיר */
+    color: #333; /* טקסט כהה כדי שיהיה קריא */
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 -4px 10px rgba(0,0,0,0.05); /* צל קל למעט עומק */
+    font-size: 14px;
+
+}
+
+
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    z-index: 100;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 10px 0;
+    gap: 40px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #884545;
+}
+
+
+.about-section {
+  background-color: #f9f9f9;
+  padding: 80px 20px;
+}
+
+.about-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 40px;
+  position: relative;
+}
+
+/* חצי ירח / אליפסה עם הכותרת בפנים */
+.about-ellipse {
+  background-color: #88454520;
+  width: 250px;
+  height: 250px;
+  border-top-right-radius: 200px;
+  border-bottom-right-radius: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.about-ellipse h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 28px;
+  color: #884545;
+  text-align: center;
+  padding: 20px;
+}
+
+/* הכרטיס עם הטקסט */
+.about-card {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  max-width: 700px;
+  position: relative;
+}
+
+.about-card p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  color: #555;
+  line-height: 1.7;
+}
+
+/* רספונסיבי */
+@media (max-width: 900px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-ellipse {
+    width: 80%;
+    height: 150px;
+    border-radius: 100px 100px 50px 50px;
+    margin-bottom: 20px;
+  }
+}
+
+
+.skills-section {
+  background-color: #f9f9f9;
+  padding: 80px 20px;
+}
+
+.skills-container-main {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+/* חצי ירח / אליפסה עם הכותרת בפנים */
+.skills-ellipse {
+  background-color: #88454520;
+  width: 250px;
+  height: 250px;
+  border-top-right-radius: 200px;
+  border-bottom-right-radius: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.skills-ellipse h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 28px;
+  color: #884545;
+  text-align: center;
+  padding: 20px;
+}
+
+/* הכרטיסים עם הכישורים */
+.skills-cards {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  max-width: 700px;
+}
+
+.skills-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.skills-group h3 {
+  font-family: 'Poppins', sans-serif;
+  color: #884545;
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.skill {
+  background: #88454520;
+  padding: 15px 25px;
+  border-radius: 30px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  text-align: center;
+}
+
+/* רספונסיבי */
+@media (max-width: 900px) {
+  .skills-container-main {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .skills-ellipse {
+    width: 80%;
+    height: 150px;
+    border-radius: 100px 100px 50px 50px;
+    margin-bottom: 20px;
+  }
+
+  .skills-cards {
+    max-width: 100%;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+
+.contact-section {
+  background-color: #f9f9f9;
+  padding: 80px 20px;
+}
+
+.contact-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+/* חצי ירח / אליפסה עם הכותרת בפנים */
+.contact-ellipse {
+  background-color: #88454520;
+  width: 250px;
+  height: 250px;
+  border-top-right-radius: 200px;
+  border-bottom-right-radius: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.contact-ellipse h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 28px;
+  color: #884545;
+  text-align: center;
+  padding: 20px;
+}
+
+/* הכרטיס עם הטופס */
+.contact-card {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  max-width: 700px;
+  position: relative;
+}
+
+.contact-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-card input,
+.contact-card textarea {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  resize: vertical;
+}
+
+.contact-card button {
+  padding: 15px;
+  border: none;
+  border-radius: 50px;
+  background-color: #3b98da;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-card button:hover {
+  background-color: #a05555;
+}
+
+/* רספונסיבי */
+@media (max-width: 900px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact-ellipse {
+    width: 80%;
+    height: 150px;
+    border-radius: 100px 100px 50px 50px;
+    margin-bottom: 20px;
+  }
+}
+
+
+
+.projects-section {
+  background-color: #f9f9f9;
+  padding: 80px 20px;
+}
+
+.projects-container-main {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+/* חצי ירח / אליפסה עם הכותרת בפנים */
+.projects-ellipse {
+  background-color: #88454520;
+  width: 250px;
+  height: 250px;
+  border-top-right-radius: 200px;
+  border-bottom-right-radius: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.projects-ellipse h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 28px;
+  color: #884545;
+  text-align: center;
+  padding: 20px;
+}
+
+/* הכרטיסים עם הפרויקטים */
+.projects-cards {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 700px;
+}
+
+.project-card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  width: 250px;
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.project-card img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+.project-card h3 {
+  margin: 15px 0 10px 0;
+  color: #884545;
+}
+
+.project-card p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.project-card .btn {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border-radius: 50px;
+  background-color: #3b98da;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.project-card .btn:hover {
+  background-color: #a05555;
+}
+
+/* כרטיס Coming Soon */
+.project-card.coming-soon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  font-weight: bold;
+  color: #884545;
+  font-size: 18px;
+  background: #f0f0f0;
+}
+
+/* רספונסיבי */
+@media (max-width: 900px) {
+  .projects-container-main {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .projects-ellipse {
+    width: 80%;
+    height: 150px;
+    border-radius: 100px 100px 50px 50px;
+    margin-bottom: 20px;
+  }
+
+  .projects-cards {
+    max-width: 100%;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
