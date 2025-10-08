@@ -6,23 +6,28 @@
     <title>Ortal Bashari - Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
 </head>
 <body>
 
 
 <nav class="navbar">
     <ul>
+        <li><a href="#home">Home</a></li>
         <li><a href="#about">About Me</a></li>
-        <li><a href="#skills">Skills</a></li>
+        <li><a href="#skills">Skills </a> </li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
     </ul>
 </nav>
 
 
-<header class="welcome">
+<header class="welcome" id="home">
     <div class="header-content">
-        <h1>Hello, I'm Ortal</h1>
+        <h1>Hello, It's Ortal</h1>
         <p> DevOps & Web Development</p>
     </div>
 </header>
@@ -32,7 +37,7 @@
 
   <div class="about-container">
     <div class="about-ellipse">
-      <h2>About Me</h2>
+      <h2 class="section-title">About Me</h2>
     </div>
 
     <div class="about-card">
@@ -52,25 +57,43 @@
 <section id="skills" class="skills-section">
   <div class="skills-container-main">
 
-    <div class="skills-ellipse">
-      <h2>Skills</h2>
+    <div class="skills-ribbon">
+      <h2 class="section-title">Skills</h2>
     </div>
 
     <div class="skills-cards">
+
+ <div class="skills-group">
+        <h3>DevOps</h3>
+        <div class="skill"><i class="fab fa-linux"></i> <span>Linux</span></div>
+        <div class="skill"><i class="devicon-bash-plain"></i> <span>Bash</span></div>
+        <div class="skill"><i class="fab fa-docker"></i> <span>Docker</span></div>
+        <div class="skill"><i class="fab fa-aws"></i> <span>AWS</span></div>
+      </div>
+
+
+
       <div class="skills-group">
         <h3>Frontend</h3>
-        <div class="skill">React</div>
-        <div class="skill">Python / Django</div>
-        <div class="skill">HTML / CSS</div>
+        <div class="skill"><i class="fab fa-react"></i>React</div>
+        <div class="skill"><i class="fab fa-html5"></i>HTML / CSS</div>
       </div>
 
       <div class="skills-group">
-        <h3>Backend</h3>
-        <div class="skill">JavaScript</div>
-        <div class="skill">React</div>
-        <div class="skill">Python / Django</div>
-        <div class="skill">HTML / CSS</div>
-      </div>
+    <h3>Backend</h3>
+    <div class="skill"><i class="fab fa-js-square"></i> <span>JavaScript</span></div>
+    <div class="skill"><i class="fab fa-node-js"></i> <span>Node.js / Express</span></div>
+    <div class="skill"><i class="fab fa-python"></i> <span>Python / Django / Flask</span></div>
+</div>
+
+
+   <div class="skills-group">
+    <h3>DB & More</h3>
+    <div class="skill"><i class="fas fa-database"></i> <span>MySQL</span></div>
+    <div class="skill"><i class="fas fa-leaf"></i> <span>MongoDB</span></div>
+    <div class="skill"><i class="fab fa-github"></i> <span>Git / GitHub</span></div>
+</div>
+
     </div>
 
   </div>
@@ -81,7 +104,7 @@
   <div class="projects-container-main">
 
     <div class="projects-ellipse">
-      <h2>Projects</h2>
+      <h2 class="section-title">Projects</h2>
     </div>
 
     <div class="projects-cards">
@@ -114,7 +137,7 @@
   <div class="contact-container">
 
     <div class="contact-ellipse">
-      <h2>Contact Me</h2>
+      <h2 class="section-title">Contact Me</h2>
     </div>
 
     <div class="contact-card">
